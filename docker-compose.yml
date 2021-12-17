@@ -8,7 +8,7 @@ networks:
 services:
 
   web-control:
-    build: ./image
+    #build: ./image
     image: wn1980/web-control-ros${TAG}
     container_name: ros_web_control
     init: true
