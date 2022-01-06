@@ -8,7 +8,8 @@ RUN apk update && \
 
 # clone sourcecode
 RUN git clone https://github.com/georgealexakis/ros-joystick.git /app
-#RUN git clone https://github.com/wn1980/ros-joystick.git /app
+
+COPY ./desktop.js /app/js/
 
 WORKDIR /app
 

@@ -91,7 +91,7 @@ function connect(robotURL, fpvValue) {
     // Publish to /cmd_vel_mux/input/safety_controller to move robot
     velocityPublisher = new ROSLIB.Topic({
         ros: ROS,
-        name: '/cmd_vel_mux/input/safety_controller',
+        name: '/webapp_velocity_smoother/raw_cmd_vel',
         messageType: 'geometry_msgs/Twist'
     });
     // Publish to /move_base_simple/goal to set new goal
